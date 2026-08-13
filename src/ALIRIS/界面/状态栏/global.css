@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root,
+[data-persona='Alice'] {
+  --c-primary: #8f9bd6;
+  --c-bg: #fdfcf9;
+  --c-accent: #f2a3b3;
+  --c-surface: #ffffff;
+  --c-text: #3a3746;
+  --c-text-muted: #8a8796;
+  --c-border: #e8e4ef;
+  --c-heart-alice: #f2a3b3;
+  --c-heart-eris: #c9556a;
+  --c-sweep: #17151c;
+}
+
+[data-persona='Eris'] {
+  --c-primary: #a03b4e;
+  --c-bg: #17151c;
+  --c-accent: #e05263;
+  --c-surface: #221e29;
+  --c-text: #e9e4f2;
+  --c-text-muted: #8f8a9e;
+  --c-border: #322c3e;
+  --c-heart-alice: #6d5a80;
+  --c-heart-eris: #e05263;
+  --c-sweep: #fdfcf9;
+}
+
+html,
+body {
+  background: transparent;
+  font-family: 'Sarasa Gothic SC', 'Microsoft YaHei UI', 'Microsoft YaHei', 'Segoe UI', sans-serif;
+}
