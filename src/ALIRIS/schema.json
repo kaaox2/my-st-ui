@@ -1,0 +1,104 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "系统": {
+      "type": "object",
+      "properties": {
+        "日期季节": {
+          "default": "深渊历117年4月，初春",
+          "type": "string"
+        },
+        "时段": {
+          "default": "早晨",
+          "type": "string"
+        },
+        "天气": {
+          "default": "晴",
+          "type": "string"
+        },
+        "当前区域": {
+          "default": "起始之森入口",
+          "type": "string"
+        },
+        "剧情进度": {
+          "default": "冒险初期，暂住翠风城旅店，尚未接取首个委托",
+          "type": "string"
+        }
+      }
+    },
+    "爱丽丝": {
+      "type": "object",
+      "properties": {
+        "Alice人格好感度": {
+          "default": 60,
+          "type": "number"
+        },
+        "Eris人格好感度": {
+          "default": 40,
+          "type": "number"
+        },
+        "当前人格": {
+          "default": "Alice",
+          "type": "string"
+        },
+        "冒险者等级": {
+          "default": "铜级",
+          "type": "string"
+        }
+      }
+    },
+    "主角": {
+      "type": "object",
+      "properties": {
+        "金钱": {
+          "type": "object",
+          "properties": {
+            "金币": {
+              "default": 0,
+              "type": "number"
+            },
+            "银币": {
+              "default": 5,
+              "type": "number"
+            },
+            "铜币": {
+              "default": 0,
+              "type": "number"
+            }
+          }
+        },
+        "体力": {
+          "default": 100,
+          "type": "number"
+        },
+        "装备物资": {
+          "default": {},
+          "type": "object",
+          "propertyNames": {
+            "type": "string"
+          },
+          "additionalProperties": {
+            "type": "number"
+          }
+        },
+        "房产": {
+          "default": "翠风城旅店「鹿角亭」的房间",
+          "type": "string"
+        },
+        "冒险者等级": {
+          "default": "铜级",
+          "type": "string"
+        }
+      },
+      "required": [
+        "金钱"
+      ]
+    }
+  },
+  "required": [
+    "系统",
+    "爱丽丝",
+    "主角"
+  ]
+}
